@@ -1,0 +1,10 @@
+MnTTS: An Open-Source Mongolian Text-to-Speech Synthesis Dataset and Accompanied Baseline 
+  https://github.com/walker-hyf/MnTTS
+Mongolian Public Speech Datasets
+  https://www.kaggle.com/datasets/bayartsogtya/mn-speech-datasets
+Mongolian Speech Dataset
+  https://www.kaggle.com/datasets/otgonbaatar11/mongolian-speech-dataset
+Chimege Speech recognizer
+  https://github.com/tugstugi/mongolian-speech-recognition/tree/master
+Mongolian speech corpus IMUT-MC
+  https://www.scidb.cn/en/detail?dataSetId=0504dcf639c24fa5b46db9492508c24b
