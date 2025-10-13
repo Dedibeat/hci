@@ -8,3 +8,5 @@ Chimege Speech recognizer
   https://github.com/tugstugi/mongolian-speech-recognition/tree/master
 Mongolian speech corpus IMUT-MC
   https://www.scidb.cn/en/detail?dataSetId=0504dcf639c24fa5b46db9492508c24b
+Duolingo grader study
+  https://blog.englishtest.duolingo.com/new-research-in-language-learning-a-pronunciation-scoring-model-built-around-intelligibility-not-imitation/
