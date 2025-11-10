@@ -1,0 +1,99 @@
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, hsla(42, 100%, 50%, 0.466), hsla(42, 100%, 50%, 0.925));
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ===== TIME BAR ===== */
+  .time-bar {
+    width: 40%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 5px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+
+  .time-progress {
+    height: 100%;
+    width: 70%; /* JS can update this */
+    background-color: #2b8cff;
+    transition: width 0.3s ease;
+  }
+
+  /* ===== DIALOG BOX ===== */
+  .dialog-box {
+    position: relative;
+    background-color: #fff3e0;
+    width: 85%;
+    max-width: 650px;
+    min-height: 180px;
+    margin-top: 50px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 40px 30px;
+  }
+
+  .bee-icon {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    background: #fbc02d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+
+  .bee-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: #333;
+  }
+
+  .bee-text {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* ===== MIC BUTTON ===== */
+  .mic-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mic {
+    background-color: #ff6f00;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .mic svg {
+    width: 42px;
+    height: 42px;
+    fill: white;
+  }
+
+  .mic.recording {
+    transform: scale(1.35);
+    background-color: #d84315;
+    box-shadow: 0 0 40px rgba(255, 87, 34, 0.8);
+  }
