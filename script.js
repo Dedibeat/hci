@@ -172,5 +172,5 @@ async function start_wait_loop(){
 
 // start
 clear_dialog();
-start_spell_loop();
+start_answer_loop();
 set_time_bar(0);
