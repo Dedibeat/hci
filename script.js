@@ -16,6 +16,18 @@ let seconds = 0;
 let answer_loop = null;
 let spell_loop = null;
 let lastRecognizeOptions = { prioritizeAlphabet: false, showDebug: true };
+let gameStarted = false
+
+export function init_game_start() {
+  const mic = document.getElementById("mic");
+
+  mic.addEventListener("click", () => {
+    if (!gameStarted) {
+      mic.classList.add("active");
+      start_answer_loop();
+    }
+  });
+}
 
 // Replace your speak() with this (increased restart delay)
 function speak(text, rate = 1, pitch = 1) {
@@ -71,6 +83,11 @@ async function answerQ(q) {
   if (q === "repeat") await speak(current_task.word);
   else await speak(ans);
   recognizer.recognize(dialog, mic, lastRecognizeOptions);
+}
+
+export function start_answer_loop_from_html() {
+  clear_dialog();
+  start_answer_loop();
 }
 
 // Replace start_answer_loop() with this:
@@ -216,7 +233,17 @@ async function start_wait_loop() {
   }, 500);
 }
 
-// start
-clear_dialog();
-start_answer_loop();
+async function requestMicPermission() {
+  try {
+    // Ask for microphone access
+    await navigator.mediaDevices.getUserMedia({ audio: true });
+    console.log("Microphone permission granted!");
+  } catch (err) {
+    console.warn("Microphone permission denied:", err);
+    alert("Please allow microphone access to play the spelling game.");
+  }
+}
+
+requestMicPermission();
+
 set_time_bar(0);

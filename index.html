@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spelling Bee</title>
-    <link rel="stylesheet" href = "style.css">
-</head>
-<body>
-        
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- TIME BAR -->
     <div class="time-bar">
-        <div class="time-progress"></div>
+      <div class="time-progress"></div>
     </div>
 
     <!-- DIALOG BOX -->
     <div class="dialog-box">
-        <div class="bee-icon">
+      <div class="bee-icon">
         <!-- Bee SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2C10.9 2 10 2.9 10 4v1H7C6.45 5 6 5.45 6 6v1H5C3.9 7 3 7.9 3 9v2c0 1.1.9 2 2 2h1v1c0 .55.45 1 1 1h3v1c0 1.1.9 2 2 2s2-.9 2-2v-1h3c.55 0 1-.45 1-1v-1h1c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2h-1V6c0-.55-.45-1-1-1h-3V4c0-1.1-.9-2-2-2z"/>
+          <path
+            d="M12 2C10.9 2 10 2.9 10 4v1H7C6.45 5 6 5.45 6 6v1H5C3.9 7 3 7.9 3 9v2c0 1.1.9 2 2 2h1v1c0 .55.45 1 1 1h3v1c0 1.1.9 2 2 2s2-.9 2-2v-1h3c.55 0 1-.45 1-1v-1h1c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2h-1V6c0-.55-.45-1-1-1h-3V4c0-1.1-.9-2-2-2z"
+          />
         </svg>
-        </div>
-        <div class="bee-text" id="bee-text">
-        Spell the word <b>"blazer"</b>.
-        </div>
+      </div>
+      <div class="bee-text" id="bee-text">
+        Click the Mic Button to start the spelling bee
+      </div>
     </div>
 
     <!-- MICROPHONE -->
     <div class="mic-container">
-        <div class="mic" id="mic">
+      <div class="mic" id="mic">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 18h2v3h-2z"/>
+          <path
+            d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 18h2v3h-2z"
+          />
         </svg>
-        </div>
+      </div>
     </div>
-    <script type = "module" src = "script.js"></script>
-</body>
+
+    <script type="module">
+      import { init_game_start } from "./script.js";
+      init_game_start();
+    </script>
+  </body>
 </html>
