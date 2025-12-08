@@ -39,8 +39,10 @@
     </div>
 
     <script type="module">
-      import { init_game_start } from "./script.js";
-      init_game_start();
+        import { createSpellBeeGame } from "./script.js";
+        
+        const game = createSpellBeeGame();
+        window.spellBeeGame = game;
     </script>
   </body>
 </html>
