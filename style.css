@@ -97,3 +97,26 @@
     background-color: #d84315;
     box-shadow: 0 0 40px rgba(255, 87, 34, 0.8);
   }
+
+  .server-config {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.server-config input {
+  width: 180px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.server-config button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}

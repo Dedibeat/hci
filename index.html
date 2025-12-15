@@ -39,10 +39,13 @@
     </div>
 
     <script type="module">
-        import { createSpellBeeGame } from "./script.js";
-        
-        const game = createSpellBeeGame();
-        window.spellBeeGame = game;
+      import { init_game_start } from "./script.js";
+      init_game_start();
     </script>
+    <div class="server-config">
+      <label>Whisper Server</label>
+      <input id="server-ip" placeholder="e.g. 192.168.1.42:3333" />
+      <button id="save-server">Save</button>
+    </div>
   </body>
 </html>
